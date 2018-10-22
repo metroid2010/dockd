@@ -1,0 +1,16 @@
+[Unit]
+Description=Dockd service (Thinkpad dock functionality)
+Requires=acpid.service
+After=acpid.service
+
+[Service]
+Type=simple
+Environment=SYSTEMD_LOG_LEVEL=debug
+Environment=DISPLAY=:0
+User=rober
+ExecStart=/usr/local/bin/dockd --daemon
+ExecStop=/usr/local/bin/dockd --set undocked
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

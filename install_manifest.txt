@@ -1,0 +1,4 @@
+/usr/local/bin/dockd
+/etc/xdg/autostart/dockd.desktop
+/etc/dockd/dock.hook
+/etc/dockd/undock.hook

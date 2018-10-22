@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/dockd.dir/main.cpp.o CMakeFiles/dockd.dir/crtc.cpp.o CMakeFiles/dockd.dir/hooks.cpp.o  -o dockd -lX11 -lXrandr -lthinkpad 
